@@ -4,74 +4,124 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Иван Оконовенко</title>
-<meta name="description" content="Иван Оконовенко — личная страница. Москва.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;800&family=Onest:wght@400;500&display=swap" rel="stylesheet">
+<meta name="description" content="Иван Оконовенко. Москва. Кофейные сети, Фонд Румянцева, экономика российского села.">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Иван Оконовенко">
+<meta property="og:description" content="Своё дело, общественная работа, Фонд Румянцева. Москва.">
+<meta property="og:url" content="https://okonovenko.ru/">
+<meta property="og:image" content="https://okonovenko.ru/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="fonts.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <style>
   :root{
-    --ink:#111318;
-    --muted:#5b6170;
-    --accent:#153ad6;
-    --paper:#fbfbfa;
-    --line:#e4e4e0;
+    --ink:#111318; --muted:#5b6170; --accent:#153ad6; --mark:#dbe4ff;
+    --paper:#fbfbfa; --line:#e4e4e0; --deep:#0f1830;
   }
   *{box-sizing:border-box}
   html{-webkit-text-size-adjust:100%}
   body{
     margin:0; background:var(--paper); color:var(--ink);
     font-family:"Onest",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-    font-size:17px; line-height:1.55;
-    min-height:100vh; display:flex; flex-direction:column;
-    padding:28px 22px 32px;
+    font-size:17px; line-height:1.62; padding:26px 22px 40px;
   }
-  .top{
-    font-size:12px; letter-spacing:.16em; text-transform:uppercase;
-    color:var(--muted);
-    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-  }
-  main{flex:1; display:flex; flex-direction:column; justify-content:center; padding:48px 0}
-  h1{
-    font-family:"Unbounded",system-ui,sans-serif;
-    font-weight:800; text-transform:uppercase;
-    font-size:clamp(38px,11.5vw,104px); line-height:.95;
-    letter-spacing:-.02em; margin:0 0 28px;
-  }
+  .wrap{max-width:780px; margin:0 auto}
+  .top{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+       font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--muted)}
+  h1{font-family:"Unbounded",system-ui,sans-serif; font-weight:800; text-transform:uppercase;
+     font-size:clamp(36px,10.5vw,88px); line-height:.94; letter-spacing:-.02em; margin:32px 0 22px}
   h1 .dot{color:var(--accent)}
-  p{max-width:34em; margin:0 0 16px; color:var(--ink)}
-  p.lead{font-size:clamp(18px,2.4vw,21px)}
-  .muted{color:var(--muted)}
+  .role{font-size:clamp(18px,2.4vw,21px); max-width:30em; margin:0 0 34px}
+  h2{font-family:"Unbounded",system-ui,sans-serif; font-weight:500; font-size:clamp(19px,2.5vw,23px);
+     margin:40px 0 14px; letter-spacing:-.01em}
+  p{margin:0 0 16px; max-width:36em}
+  em{font-style:italic}
+  mark{background:var(--mark); color:inherit; padding:.06em .18em; border-radius:2px}
   a{color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(21,58,214,.35)}
   a:hover,a:focus{border-bottom-color:var(--accent)}
   a:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:2px}
-  footer{
-    border-top:1px solid var(--line); padding-top:18px;
-    display:flex; flex-wrap:wrap; gap:6px 24px; justify-content:space-between;
-    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-    font-size:13px; color:var(--muted);
-  }
-  @media (min-width:760px){
-    body{padding:40px 56px 44px}
-    main{padding:64px 0}
-  }
+  .rod{background:var(--deep); color:#f4f5f8; border-radius:10px; padding:24px 22px; margin:34px 0 0}
+  .rod h2{margin-top:0; color:#fff}
+  .rod p{color:#d5d8e2}
+  .rod a{color:#a9bcff; border-bottom-color:rgba(169,188,255,.4)}
+  .rod .line{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:13px;
+             color:#98a0b8; margin:0; line-height:1.9}
+  .cards{margin:14px 0 0; padding:0; list-style:none; border-top:1px solid var(--line)}
+  .cards li{border-bottom:1px solid var(--line); padding:16px 0}
+  .cards .what{font-family:"Unbounded",system-ui,sans-serif; font-weight:500; font-size:16px; display:block; margin-bottom:4px}
+  .cards .why{color:var(--muted)}
+  footer{margin-top:40px; padding-top:18px; border-top:1px solid var(--line);
+         display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:space-between;
+         font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:13px; color:var(--muted)}
+  @media (min-width:760px){ body{padding:44px 40px 52px} .rod{padding:30px 28px} }
   @media print{
-    body{background:#fff; padding:0}
-    a{border:0; color:#000}
+    body{background:#fff; padding:0; font-size:11pt}
+    a{border:0; color:#000} h1{font-size:32pt}
+    .rod{background:#fff; color:#000; border:1pt solid #999}
+    .rod p,.rod .line{color:#000} @page{margin:16mm}
   }
 </style>
 </head>
 <body>
-  <div class="top">Москва</div>
+<div class="wrap">
 
-  <main>
-    <h1>Иван<br>Оконовенко<span class="dot">.</span></h1>
-    <p class="lead">Сайт пересобирается — прежний перестал существовать 3 августа вместе с площадкой, на которой стоял.</p>
-    <p class="muted">Пока здесь пусто, пишите на почту — она работает и читается.</p>
-  </main>
+  <div class="top">Москва · okonovenko.ru</div>
+
+  <h1>Иван<br>Оконовенко<span class="dot">.</span></h1>
+
+  <p class="role">Руководитель развития сети кофеен «Коферусс». Сооснователь Фонда Румянцева. Из семьи, которая полтора века держалась за свою землю.</p>
+
+  <h2>Григорий и Иван</h2>
+  <p>В нашей мужской линии из поколения в поколение чередуются два имени: Григорий, Иван, снова Григорий, снова Иван. Прадед Григорий прошёл две мировые войны. Дед Иван — артиллерист, воевал с Японией. Отец Григорий — <mark>заслуженный работник сельского хозяйства</mark>. Я — Иван.</p>
+  <p>Род пришёл из казацкого Стародубья в Саратовское Поволжье и осел в Калининском районе: переселенцы, которые начинали с нуля на чужом месте и за век сделали его своим. Я родился в <mark>Саратове</mark>, вырос в Калининске, а в 2019 году уехал в Москву — и, как мне кажется, занимаюсь ровно тем же, чем занимались они. Хозяйство просто другое.</p>
+
+  <div class="rod">
+    <h2>История семьи</h2>
+    <p>Род собран по архивам: откуда пошла фамилия, как семья двигалась с запада на восток, что стало с ней в двадцатом веке.</p>
+    <p class="line">Стародубье · Крутая Буда<br>→ Саратовское Поволжье · Калининск<br>→ Оконовенко · Сорокотяга · Кривцановы</p>
+  </div>
+
+  <h2>Своё дело</h2>
+  <p>Я открыл кофейню <mark>на свои</mark>. Сам искал помещение, торговался за аренду, считал экономику до рубля, нанимал людей и вставал за стойку, когда некому было выйти в смену. Без инвестора за спиной — только собственные деньги и собственный расчёт.</p>
+  <p>Эта кофейня сейчас стоит. В здании затеяли большую стройку — открывают фитнес-клуб: пыль, демонтаж, поток упал, и летом я точку заморозил. Проще всего было закрыть её и списать в убыток. Я не закрыл: стройка кончается, клуб откроется, люди вернутся — и точка снова заработает. <mark>Дело — это не только запуск, но и умение переждать плохой год, не бросив начатое.</mark></p>
+
+  <p>Так узнаёшь то, чего не узнать из отчётов: хозяин малого дела живёт без лоббиста и без подушки на плохой месяц, и зарплату людям платит раньше, чем себе. Таких в России сотни тысяч. Страна держится на них не меньше, чем на больших компаниях, — только говорят о них куда реже.</p>
+  <p>Сейчас я <mark>руководитель развития сети «Коферусс»</mark>: локации, партнёры, франшиза. По сути — помогаю людям открыть своё и не разориться на первом шаге, потому что этот шаг сам прошёл на своих деньгах. <a href="https://invest.coffeeruss.ru/ivan/">Подробно о кофейной части</a>.</p>
+
+  <h2>Русское предпринимательство — это не только большие имена</h2>
+  <p>Я организовал конференцию <mark>«Русский бизнес»</mark>. Не форум с президиумом: потомок купеческой династии Абрикосовых рассказывал о роли промышленников и купцов в Российской империи через историю собственной семьи, председатель производственного кооператива — о том, чем русская кооперация похожа на баскский Мондрагон, а дальше была прямая дискуссия предпринимателей о том, как на самом деле живёт малый бизнес в сегодняшней России.</p>
+  <p>Мне важно, чтобы у людей, которые тянут своё дело, была среда: не выставка успеха, а место, где говорят честно и помогают друг другу.</p>
+
+  <h2>Россия начинается в школе</h2>
+  <p>Вместе с товарищами я основал <mark>Фонд Румянцева</mark> — независимую НКО, которая поддерживает изменения в гуманитарном образовании и проекты исторического просвещения. Мы сделали премию <mark>«Учитель истории»</mark>: находим и показываем стране тех, кто преподаёт историю так, что из детей вырастают граждане — думающие, знающие своё прошлое, готовые отвечать не только за себя.</p>
+  <p>За два сезона в конкурсе поучаствовал <mark>каждый двадцатый учитель истории страны</mark> — больше трёх тысяч человек.</p>
+  <p>На мне в фонде не только замыслы, но и работа, которую никто не видит: я провёл фонд через получение статуса социально ориентированной НКО — документы, соответствие требованиям, реестр. Скучная часть, без которой благотворительность остаётся разговорами. <a href="https://fondrumyantseva.ru/">fondrumyantseva.ru</a></p>
+  <p>Состою в движении <mark>«Общество.Будущее»</mark>: гуманитарное направление, мероприятия, внутренняя работа. Фонд, кстати, вырос оттуда же — там я познакомился с людьми, с которыми мы его и сделали.</p>
+
+  <h2>Написать</h2>
+  <p>Если у вас своё дело, общее дело или предложение — пишите напрямую: <a href="mailto:ivan@okonovenko.ru">ivan@okonovenko.ru</a>. Читаю сам, отвечаю сам.</p>
 
   <footer>
-    <span><a href="mailto:ivan@okonovenko.ru">ivan@okonovenko.ru</a></span>
     <span>okonovenko.ru</span>
+    <span>Москва</span>
   </footer>
+
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Иван Оконовенко",
+  "url": "https://okonovenko.ru/",
+  "email": "mailto:ivan@okonovenko.ru",
+  "birthPlace": {"@type": "Place", "name": "Саратов"},
+  "address": {"@type": "PostalAddress", "addressLocality": "Москва", "addressCountry": "RU"},
+  "sameAs": ["https://invest.coffeeruss.ru/ivan/"]
+}
+</script>
 </body>
 </html>
