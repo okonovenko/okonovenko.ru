@@ -3,48 +3,63 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Иван Оконовенко — личная страница</title>
-<meta name="description" content="Иван Оконовенко, Москва — личная страница. Предприниматель. Связаться: ivan@okonovenko.ru">
+<title>Иван Оконовенко</title>
+<meta name="description" content="Иван Оконовенко, Москва. Предприниматель, сооснователь Фонда Румянцева, руководитель развития сети кофеен «Коферусс», консул «Общества.Будущее».">
 <link rel="canonical" href="https://okonovenko.ru/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Иван Оконовенко">
-<meta property="og:description" content="Личная страница. Москва.">
+<meta property="og:description" content="Иван Оконовенко, Москва. Предприниматель, сооснователь Фонда Румянцева, руководитель развития сети кофеен «Коферусс», консул «Общества.Будущее».">
 <meta property="og:url" content="https://okonovenko.ru/">
 <meta property="og:image" content="https://okonovenko.ru/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="ru_RU">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="fonts.css">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/fonts.css">
 <style>
-  :root{ --ink:#111318; --muted:#5b6170; --accent:#153ad6; --paper:#fbfbfa; --line:#e4e4e0 }
-  *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%}
-  body{
-    margin:0; background:var(--paper); color:var(--ink);
-    font-family:"Onest",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-    font-size:17px; line-height:1.6; min-height:100vh;
-    display:flex; flex-direction:column; padding:28px 22px 32px;
-  }
-  .top{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-       font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--muted)}
-  main{flex:1; display:flex; flex-direction:column; justify-content:center; padding:48px 0}
-  h1{font-family:"Unbounded",system-ui,sans-serif; font-weight:800; text-transform:uppercase;
-     font-size:clamp(38px,11.5vw,104px); line-height:.95; letter-spacing:-.02em; margin:0 0 26px}
-  h1 .dot{color:var(--accent)}
-  p{max-width:34em; margin:0 0 16px}
-  p.lead{font-size:clamp(18px,2.4vw,21px)}
-  .muted{color:var(--muted)}
-  a{color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(21,58,214,.35)}
-  a:hover,a:focus{border-bottom-color:var(--accent)}
-  a:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:2px}
-  footer{border-top:1px solid var(--line); padding-top:18px;
-    display:flex; flex-wrap:wrap; gap:6px 24px; justify-content:space-between;
-    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:13px; color:var(--muted)}
-  @media (min-width:760px){ body{padding:40px 56px 44px} main{padding:64px 0} }
-  @media print{ body{background:#fff;padding:0} a{border:0;color:#000} }
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"Onest",system-ui,sans-serif;font-size:17px;line-height:1.55}
+a{color:inherit}
+a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+
+:root{--ink:#111318;--muted:#5b6170;--accent:#153ad6;--paper:#fbfbfa;--line:#e4e4e0;--tint:#eef1fc}
+body{background:var(--paper);color:var(--ink);padding:20px 20px 40px}
+.wrap{max-width:660px;margin:0 auto}
+nav{display:flex;flex-wrap:wrap;gap:4px 20px;font-size:14px;color:var(--muted);margin-bottom:48px}
+nav a{text-decoration:none}
+nav a:first-child{color:var(--ink)}
+nav a:hover{color:var(--accent)}
+h1{font-family:"Unbounded",sans-serif;font-weight:800;font-size:clamp(30px,7.6vw,56px);line-height:1;letter-spacing:-.02em;margin:0 0 20px}
+.head{display:flex;align-items:center;gap:16px;margin:0 0 20px}
+.head img{width:72px;height:72px;object-fit:cover;flex:none}
+.head h1{margin:0}
+p{margin:0 0 14px}
+.lead{font-size:18px}
+.soc{display:flex;flex-wrap:wrap;gap:4px 8px;color:var(--muted)}
+.soc a,.t a,main p a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(21,58,214,.35)}
+.soc a:hover,.t a:hover,main p a:hover{border-bottom-color:var(--accent)}
+h2{font-family:"Unbounded",sans-serif;font-weight:500;font-size:17px;margin:44px 0 12px}
+.row{display:grid;grid-template-columns:1fr;gap:2px 24px;padding:10px 0}
+.row .t{font-weight:500}
+.row .d small{display:block;color:var(--muted);font-size:14px;margin-top:2px}
+.row.n .dt{font-weight:400;color:var(--muted);font-size:15px}
+.row.n .d a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(21,58,214,.35)}
+.more{font-size:14px;margin-top:8px}
+.box{background:var(--tint);margin:44px -20px 0;padding:8px 20px 28px}
+.box h2{margin-top:24px}
+.two{display:grid;grid-template-columns:1fr;gap:18px 32px;margin:18px 0 22px}
+.two b{display:block;margin-bottom:4px}
+.two p{margin:0}
+.btn{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;font-weight:500;padding:11px 20px;border-radius:999px}
+.btn:hover{background:var(--accent)}
+footer{margin-top:44px;border-top:1px solid var(--line);padding-top:16px;font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:space-between}
+@media(min-width:900px){.head{position:relative}.head img{position:absolute;right:100%;margin-right:24px;width:96px;height:96px;top:50%;transform:translateY(-50%)}}
+@media(min-width:700px){body{padding:36px 40px 56px}.row{grid-template-columns:11em 1fr}.two{grid-template-columns:1fr 1fr}.box{margin-left:-24px;margin-right:-24px;padding:8px 24px 30px}}
+
 </style>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
@@ -61,19 +76,35 @@
 <!-- /Yandex.Metrika counter -->
 </head>
 <body>
-  <div class="top">Москва</div>
-
-  <main>
-    <h1>Иван<br>Оконовенко<span class="dot">.</span></h1>
-    <p class="lead">Личная страница. Сейчас она готовится — скоро здесь будет о том, чем я занимаюсь.</p>
-    <p class="muted">Пока самый быстрый способ связаться — почта. Читаю и отвечаю сам.</p>
-  </main>
-
-  <footer>
-    <span><a href="mailto:ivan@okonovenko.ru">ivan@okonovenko.ru</a></span>
-    <span>okonovenko.ru</span>
-  </footer>
-
+<div class="wrap">
+<nav><a href="/">Главная</a><a href="#proekty">Проекты</a><a href="#zametki">Заметки</a><a href="#sotrudnichestvo">Сотрудничество</a><a href="/ip/">ИП</a></nav>
+<main>
+<div class="head"><img src="/photo.jpg" width="480" height="480" alt="Иван Оконовенко"><h1>Иван Оконовенко</h1></div>
+<p class="lead">Предприниматель. Сооснователь Фонда Румянцева, руководитель развития сети кофеен «Коферусс», консул «Общества.Будущее». Москва.</p>
+<p class="soc"><a href="https://t.me/ivanokonovenko">Телеграм-канал</a> · <a href="https://vk.ru/ivanokonovenko">ВКонтакте</a> · <a href="https://ru.linkedin.com/in/ivanokonovenko">LinkedIn</a> · <a href="https://tenchat.ru/ivanokonovenko">TenChat</a> · <a href="mailto:ivan@okonovenko.ru">Почта</a></p>
+<h2>Сейчас</h2>
+<p>Руководитель развития сети кофеен <a href="https://coffeeruss.ru/">«Коферусс»</a>: франшиза, инвесторы, новые точки.</p>
+<h2 id="proekty">Проекты</h2>
+<div class="row"><div class="t"><a href="https://coffeeruss.ru/">Коферусс</a></div><div class="d">Сеть кофеен в Москве и её франшиза. Занимаюсь франшизой, инвесторами и новыми точками.<small>Руководитель развития</small></div></div>
+<div class="row"><div class="t"><a href="https://fondrumyantseva.ru/">Фонд Румянцева</a></div><div class="d">Историко-просветительский фонд. Проводит премии «Учитель истории» и «Учитель информатики», «Румянцевскую траекторию» и Румянцевский кружок.<small>Сооснователь</small></div></div>
+<div class="row"><div class="t">«Общество.Будущее»</div><div class="d">Общественное движение.<small>Консул · избран в Консулат 7 ноября 2026 года</small></div></div>
+<div class="row"><div class="t"><a href="https://t.me/ivanokonovenko">Телеграм-канал</a></div><div class="d">«Так называемый Иван Оконовенко»: история, политика, эссе.<small>Автор</small></div></div>
+<div class="row"><div class="t">МГУ</div><div class="d">Магистратура экономического факультета.<small>Учусь</small></div></div>
+<h2 id="zametki">Заметки</h2>
+<div class="row n"><div class="t dt">26 апр 2026</div><div class="d"><a href="https://t.me/ivanokonovenko/41">В декабре 1983-го на Игналинской атомной станции инженеры заметили штуку: кнопка АЗ-5, которой реактор глушат, в определённых режимах реактор как раз разгоняла</a></div></div>
+<div class="row n"><div class="t dt">3 апр 2026</div><div class="d"><a href="https://t.me/ivanokonovenko/37">Задумался тут, были ли вообще войны, которые с самого начала задумывались как тяжёлые и затяжные, а не как лёгкая прогулка</a></div></div>
+<p class="more"><a href="https://t.me/ivanokonovenko">все заметки в телеграм-канале</a></p>
+<div class="box" id="sotrudnichestvo">
+<h2>Сотрудничество</h2>
+<div class="two">
+<div><b>Консультирую</b><p>По вопросам коммерческой деятельности и управления: как строить франшизу, как выбирать место и считать точку до открытия, как привлекать инвесторов. Работаю как ИП, <a href="/ip/">подробности и реквизиты</a>.</p></div>
+<div><b>Инвестиции в кофейни</b><p>Открываю кофейни сети «Коферусс» на своё ИП и беру на это деньги частных инвесторов. Подробности на <a href="https://rus-coffee.ru/">rus-coffee.ru</a>.</p></div>
+</div>
+<a class="btn" href="mailto:ip@okonovenko.ru">Написать на ip@okonovenko.ru</a>
+</div>
+</main>
+<footer class="mono"><span>okonovenko.ru</span><span>ИП Оконовенко И. Г.</span></footer>
+</div>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
