@@ -27,8 +27,9 @@ a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 
 :root{--ink:#111318;--muted:#5b6170;--accent:#153ad6;--paper:#fbfbfa;--line:#e4e4e0;--tint:#eef1fc}
-body{background:var(--paper);color:var(--ink);padding:20px 20px 40px}
+body{background:var(--paper);color:var(--ink);padding:36px 20px 40px}
 .wrap{max-width:660px;margin:0 auto}
+footer a{text-decoration:none;border-bottom:1px solid var(--line)}
 nav{display:flex;flex-wrap:wrap;gap:4px 20px;font-size:14px;color:var(--muted);margin-bottom:48px}
 nav a{text-decoration:none}
 nav a:first-child{color:var(--ink)}
@@ -59,7 +60,7 @@ h2{font-family:"Unbounded",sans-serif;font-weight:500;font-size:17px;margin:44px
 .btn:hover{background:var(--accent)}
 footer{margin-top:44px;border-top:1px solid var(--line);padding-top:16px;font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:space-between}
 @media(min-width:900px){.head{position:relative}.head img{position:absolute;right:100%;margin-right:24px;width:96px;height:96px;top:50%;transform:translateY(-50%)}}
-@media(min-width:700px){body{padding:36px 40px 56px}.row{grid-template-columns:11em 1fr}.two{grid-template-columns:1fr 1fr}.box{margin-left:-24px;margin-right:-24px;padding:8px 24px 30px}}
+@media(min-width:700px){body{padding:72px 40px 56px}.row{grid-template-columns:11em 1fr}.two{grid-template-columns:1fr 1fr}.box{margin-left:-24px;margin-right:-24px;padding:8px 24px 30px}}
 
 </style>
 <!-- Yandex.Metrika counter -->
@@ -78,14 +79,11 @@ footer{margin-top:44px;border-top:1px solid var(--line);padding-top:16px;font-si
 </head>
 <body>
 <div class="wrap">
-<nav><a href="/">Главная</a><a href="#proekty">Проекты</a><a href="#zametki">Заметки</a><a href="/ip/">ИП</a></nav>
 <main>
 <div class="head"><img src="/photo.jpg" width="480" height="480" alt="Иван Оконовенко"><h1>Иван Оконовенко</h1></div>
 <p class="lead">Предприниматель. Сооснователь Фонда Румянцева, руководитель развития сети кофеен «Коферусс», консул «Общества.Будущее». Москва.</p>
 <p class="soc"><a href="https://t.me/ivanokonovenko">Телеграм-канал</a> · <a href="https://vk.ru/ivanokonovenko">ВКонтакте</a> · <a href="https://ru.linkedin.com/in/ivanokonovenko">LinkedIn</a></p>
 <p class="wr">Написать: <a href="mailto:ivan@okonovenko.ru">ivan@okonovenko.ru</a></p>
-<h2>Сейчас</h2>
-<p>Руководитель развития сети кофеен <a href="https://coffeeruss.ru/">«Коферусс»</a>: франшиза, инвесторы, новые точки.</p>
 <h2 id="proekty">Проекты</h2>
 <div class="row"><div class="t"><a href="https://fondrumyantseva.ru/">Фонд Румянцева</a></div><div class="d">Историко-просветительский фонд. Проводит премии «Учитель истории» и «Учитель информатики», «Румянцевскую траекторию» и Румянцевский кружок.<small>Сооснователь</small></div></div>
 <div class="row"><div class="t"><a href="https://coffeeruss.ru/">Коферусс</a></div><div class="d">Сеть кофеен в Москве и её франшиза. Занимаюсь франшизой, инвесторами и новыми точками.<small>Руководитель развития</small></div></div>
@@ -96,7 +94,7 @@ footer{margin-top:44px;border-top:1px solid var(--line);padding-top:16px;font-si
 <div class="row n"><div class="t dt">3 апр 2026</div><div class="d"><a href="https://t.me/ivanokonovenko/37">Задумался тут, были ли вообще войны, которые с самого начала задумывались как тяжёлые и затяжные, а не как лёгкая прогулка</a></div></div>
 <p class="more"><a href="https://t.me/ivanokonovenko">все заметки в телеграм-канале</a></p>
 </main>
-<footer class="mono"><span>okonovenko.ru</span><span>ИП Оконовенко И. Г.</span></footer>
+<footer class="mono"><span>okonovenko.ru</span><span><a href="/ip/">ИП Оконовенко И. Г.</a></span></footer>
 </div>
 <script type="application/ld+json">
 {
